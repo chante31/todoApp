@@ -26,9 +26,19 @@
         <%@ include file="menu.jsp" %>
 
         <h1>Pays Engagé</h1>   
-        <h2>coucou </h2>
-        cccccccccc
-
+      <h1>La bonne méthode JSTL et EL</h1>
+            <div><table>   
+                    <c:forEach items="${competiteurs.paysL}" var="pays">
+                        <tr>
+                            <td><img src="/SuperApp/${pays.drapeauUrl}"></td>
+                        
+                            <td>${pays.nom}</td>
+                            
+                        </tr>
+                    </c:forEach>
+          
+                </table></div>
+                    
 
                 </table>               
             </div>
