@@ -10,11 +10,7 @@
          import="java.util.stream.Collectors"
          %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%!
-    Competiteurs competiteurs;
-    Pays pays;
-    List<Pays> listePays;
-%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,7 +21,9 @@
     <body>
         <%@ include file="menu.jsp" %>
 
-        <h1>Pays Engagé</h1>   
+        <h1>Pays Engagé</h1>  
+        
+        
       <h1>La bonne méthode JSTL et EL</h1>
             <div><table>   
                     <c:forEach items="${competiteurs.paysL}" var="pays">

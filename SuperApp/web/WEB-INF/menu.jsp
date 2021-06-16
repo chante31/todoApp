@@ -17,6 +17,7 @@
                 <li><a href="accueil">Accueil</a></li>
                 <li><a href="/SuperApp/profil">Profil</a></li>
                 <li><a href="/SuperApp/apropos">A propos</a></li>
+                 <li><a href="/SuperApp/match">Match</a></li>
             </ul>
         </nav>
     </body>

@@ -36,6 +36,10 @@
         <servlet-name>CheckoutPage</servlet-name>
         <servlet-class>fr.ldnr.app.CheckoutPage</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MatchController</servlet-name>
+        <servlet-class>fr.ldnr.app.MatchController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AProposPage</servlet-name>
         <url-pattern>/apropos</url-pattern>
@@ -67,6 +71,10 @@
     <servlet-mapping>
         <servlet-name>CheckoutPage</servlet-name>
         <url-pattern>/CheckoutPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MatchController</servlet-name>
+        <url-pattern>/match</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

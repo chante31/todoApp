@@ -5,7 +5,9 @@
  */
 package fr.ldnr.app;
 import fr.ldnr.app.modele.Competiteurs;
+import fr.ldnr.app.modele.MatchModel;
 import fr.ldnr.app.modele.Pays;
+import fr.ldnr.app.modele.Rencontre;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
@@ -50,7 +52,16 @@ public class Applistener implements ServletContextListener {
         competiteurs.add(new Pays("Allemagne", "/images/drapeau/allemagne.png"));
         competiteurs.add(new Pays("Hongrie", "/images/drapeau/hongrie.png"));
         competiteurs.add(new Pays("Portugal", "/images/drapeau/portugal.png"));
+        
+        MatchModel match= new MatchModel(new Pays("Italie", "/images/drapeau/italie.png"),new Pays("Suisse", "/images/drapeau/suisse.png"),1,3);
+        Rencontre rencontre = new Rencontre();
+        rencontre.addMatch(match);
+        
         ctx.setAttribute("competiteurs", competiteurs);
+        
+        ctx.setAttribute("rencontre", rencontre);
+        
+  
     }
     
     @Override
