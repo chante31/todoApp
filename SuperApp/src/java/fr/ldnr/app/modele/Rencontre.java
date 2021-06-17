@@ -24,7 +24,7 @@ public class Rencontre {
     
     public void addMatch(MatchModel m){
         list.add(m);
-        Collections.sort(list);
+     
     
     } 
       public List<MatchModel> getList() {

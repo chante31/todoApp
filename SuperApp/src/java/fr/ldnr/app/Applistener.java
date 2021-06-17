@@ -53,12 +53,18 @@ public class Applistener implements ServletContextListener {
         competiteurs.add(new Pays("Hongrie", "/images/drapeau/hongrie.png"));
         competiteurs.add(new Pays("Portugal", "/images/drapeau/portugal.png"));
         
+       
         MatchModel match= new MatchModel(new Pays("Italie", "/images/drapeau/italie.png"),new Pays("Suisse", "/images/drapeau/suisse.png"),1,3);
+        MatchModel match1= new MatchModel(new Pays("Turquie", "/images/drapeau/turquie.png"),new Pays("Italie", "/images/drapeau/italie.png"),0,0);
+         MatchModel match2= new MatchModel(new Pays("Danemark", "/images/drapeau/danemark.png"),new Pays("Finlande", "/images/drapeau/finlande.png"),0,0);
+        
+        
         Rencontre rencontre = new Rencontre();
         rencontre.addMatch(match);
+        rencontre.addMatch(match1);
+        rencontre.addMatch(match2);
         
         ctx.setAttribute("competiteurs", competiteurs);
-        
         ctx.setAttribute("rencontre", rencontre);
         
   

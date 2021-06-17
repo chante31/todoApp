@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
  *
  * @author stag
  */
-public class MatchModel implements Comparable  <MatchModel>{
+public class MatchModel implements Comparable <MatchModel>{
     private LocalDateTime dateDuMatch = null;
 
     public LocalDateTime getDateDuMatch() {

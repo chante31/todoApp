@@ -6,6 +6,7 @@
 package fr.ldnr.app.modele;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +36,7 @@ public class Competiteurs {
         paysL.add(pays);
         paysS.add(pays);
         paysT[nbCompetiteurs++] = pays;
+       
     }
 
     

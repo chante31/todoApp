@@ -11,6 +11,11 @@
          %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+<%!
+    Competiteurs competiteurs;
+    Pays pays;
+    List<Pays> listePays;
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,7 +34,21 @@
                     <c:forEach items="${competiteurs.paysL}" var="pays">
                         <tr>
                             <td><img src="/SuperApp/${pays.drapeauUrl}"></td>
-                        
+<!--                        // Cooolections.sort > objet Comparez to Obj2  > compare to il a été re
+                        // coolection sort ca fait pas que trier > modifie la liste 
+
+for (liste)
+el1liste (france)  
+    france.drapeauURL 
+    france.nom
+el2liste(Allemagne)
+    allemagne.drapeauURL
+    allemagne.nom
+
+pays l > liste
+pays 1 > drapeauUrl / nom 
+pays 2 
+    -->
                             <td>${pays.nom}</td>
                             
                         </tr>

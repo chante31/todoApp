@@ -11,6 +11,7 @@ public class Pays implements Comparable {
     
     private String nom;
     private String drapeauUrl;
+    
 
     public Pays(String nom, String drapeauUrl) {
         this.nom = nom;
@@ -19,7 +20,7 @@ public class Pays implements Comparable {
 
     public Pays() {
     }
-
+    
     public String getNom() {
         return nom;
     }
