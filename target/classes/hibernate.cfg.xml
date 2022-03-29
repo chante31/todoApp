@@ -1,0 +1,21 @@
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+       
+        <property name="hibernate.connection.driver_class">
+            org.sqlite.JDBC
+        </property>
+        <property name="hibernate.connection.url">
+            jdbc:sqlite:todolist.sqlite
+        </property>
+       
+        <property name="hibernate.dialect">
+            org.sqlite.hibernate.dialect.SQLiteDialect
+        </property>
+        <!--prend en compte les annotations de la classe Task-->
+        <mapping class="fr.rtcl.dto.Task" />
+     
+    </session-factory>
+</hibernate-configuration>
